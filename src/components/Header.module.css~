@@ -147,6 +147,17 @@
 	font-family: 'Bellota', cursive;
 	font-size: 100%;
 }
+.searchbar2 {
+	width: 80%;
+	border: solid;
+	border-width: 0.00001px;
+	border-radius: 10px 10px 10px 10px;
+	margin-right: 5px;
+	padding: 15px 15px 15px 15px;
+	font-family: 'Bellota', cursive;
+	font-size: 100%;
+	margin-left: 20%;
+}
 
 .searchimage {
 	position: inline-block;

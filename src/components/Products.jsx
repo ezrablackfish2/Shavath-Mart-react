@@ -3,7 +3,7 @@ import Product from "./Product.jsx"
 import styles from "./Products.module.css";
 
 interface product {
-		_id: string;
+		id: string;
 		name: string;
 		price: string;
 		color: string;
@@ -58,7 +58,7 @@ export default function Products(props: ProductsProp) {
 		                {
 					                currentProducts
 								.map((product) => (
-									                    <Product key={product._id} product={product}/>
+									                    <Product key={product.id} product={product}/>
 									                ))
 					            }
 		    	<div className={styles.pagination}>

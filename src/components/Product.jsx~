@@ -22,7 +22,7 @@ export default function Product(props: ProductProps) {
 	    return (
 		            <div
 		                className={styles.products}>
-		    	<a href={`/${props.product.id}`}>
+		    	<a href={`/${props.product.id}`} className={styles.productlink}>
 		                <img className={styles.productimage} src={imageURI}/>
 		    <p className={styles.productname}>
 		      {props.product.name.length > 17

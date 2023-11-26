@@ -1,3 +1,8 @@
+.productlink {
+	position: relative;
+	text-decoration: none;
+}
+
 .reviewlists {
 	position: relative;
 	display: inline-block;
@@ -68,6 +73,7 @@
         color: #ffffff;
 	color: #0670ec;
 	margin-bottom: 8%;
+	text-decoration: none;
 }
 
 .products:hover {
@@ -93,6 +99,7 @@
 	max-height: 200px;
 	min-height: 150px;
 	margin-bottom: 22px;
+	text-decoration: none;
 }
 
 .productname {
@@ -116,8 +123,9 @@
 .productcolor {
 	position: relative;
 	justify-content: center;
-	left: 42%;
+	left: 38%;
 	font-family: 'Black Ops One', cursive;
+	text-decoration: none;
 }
 
 @media (max-width: 900px) {
@@ -187,6 +195,9 @@
 		margin-top: 2%;
 		margin-bottom: 7%;
 		width: 30%;
+	}
+	.productlink {
+		text-decoration: none;
 	}
 }
 @media (max-width: 450px) {
