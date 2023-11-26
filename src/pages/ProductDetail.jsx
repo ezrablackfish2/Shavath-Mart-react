@@ -47,7 +47,6 @@ function ProductDetail (  { items, user, setlogin, setSuccess, search, setSearch
 	  const [category, setCategory] = useState('All');
 
 
-	
 	  useEffect(() => {
 		      const fetchReviews = async () => {
 			            try {
@@ -70,11 +69,6 @@ function ProductDetail (  { items, user, setlogin, setSuccess, search, setSearch
 		      fetchReviews();
 		    }, []);
 
-	if (!item) {
-	      return (
-		        <h1>404 page not found</h1>
-	      );
-	    }
 
 	    const handleSubmit = (event: any) => {
 		            event.preventDefault();
@@ -99,6 +93,11 @@ function ProductDetail (  { items, user, setlogin, setSuccess, search, setSearch
 								console.log(reviewData);
 							}	
 		        };
+		if (!item) {
+				      return (
+					      		        <h1>Please wait loading</h1>
+					      	      );
+				    }
 	const imageData = item.img.data;
 	const uint8Array = new Uint8Array(imageData);
 	const binaryString = uint8Array.reduce(
