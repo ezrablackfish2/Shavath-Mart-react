@@ -71,7 +71,6 @@ function App() {
 	  	  </Routes>
 	  	  </Router>
 	  	  </div>
-	  	  <div className={styles.side}><span className={styles.yellowbox}></span>More to explore</div>
 	  	  </div>
 	  </>
   );
