@@ -6,7 +6,13 @@ import AboutSelector from './AboutSelector2.jsx';
 import News from './NewsSelector2.jsx';
 import Currency from './CurrencySelector2.jsx';
 import React, { useState, useEffect } from 'react';
-import social_handles from '../utils/social_handles.json'
+import social_handles from '../utils/social_handles.jsx'
+import gmail from '../public/gmail.png'
+import phone from '../public/phone.png'
+import logo from '../public/logo.jpg';
+
+
+
 
 
 interface HeaderProps {
@@ -48,21 +54,21 @@ export default function Header({ setlogin, setSuccess, search, setSearch, select
 	  return (
 		      <>
 		        <div className={styles.header}>
-		          <div className={styles.headerphone}>
-		            <button onClick={() => setSelectedAbout("Contact Us")}>
+		          <div className={styles.headerdiv}>
+		            <button onClick={() => setSelectedAbout("Contact Us")} className={styles.headerphone}>
 		              <img
 		                className={styles.headerphoneimage}
-		                src={"/phone.png"}
+		                src={phone}
 		                alt="Phone Image"
 		              />
 		              +251913657294
 		            </button>
 		          </div>
-		          <div className={styles.headergmail}>
-		            <a href="mailto:hiwimehdi@gmail.com">
+		          <div className={styles.headerdiv}>
+		            <a href="mailto:hiwimehdi@gmail.com" className={styles.headergmail}>
 		              <img
 		                className={styles.headergmailimage}
-		                src={"/gmail.png"}
+		                src={gmail}
 		                alt="Gmail Image"
 		              />
 		              shavath@gmail
@@ -83,8 +89,8 @@ export default function Header({ setlogin, setSuccess, search, setSearch, select
 		          </div>
 		        </div>
 		        <div className={styles.navigationbar}>
-		          <a href="/home">
-		            <img className={styles.logo} src="/logo.jpg" alt="Logo Image"/>
+		          <a href="/">
+		            <img className={styles.logo} src={logo} alt="Logo Image"/>
 		          </a>
 		          <Search search={search} setSearch={setSearch} />
 		        </div>

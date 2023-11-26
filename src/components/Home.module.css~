@@ -1,3 +1,9 @@
+.homesearch {
+	display: inline-block;
+	left: 1000px;
+	width: 70%;
+}
+
 .rederror {
 	position: absolute;
 	display: inline-block;

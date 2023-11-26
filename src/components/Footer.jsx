@@ -1,7 +1,8 @@
 import Text from "./Text.jsx";
 import styles from './Footer.module.css';
 import React, { useState } from 'react';
-import social_handles from '../utils/social_handles.json'
+import social_handles from '../utils/social_handles.jsx';
+import logo from '../public/logo.jpg';
 
 export default function Footer() {
 
@@ -16,7 +17,7 @@ export default function Footer() {
 		            <div className={styles.footer}>
 		                <div>
 		                    <div className={styles.footerdetail}>
-		                        <img className={styles.footerlogo} src="/logo.jpg"/>
+		                        <img className={styles.footerlogo} src={logo} />
 		    		<div>ShavathMart.com, the top marketplace for purchasing and selling products and services among our clientele. We wholeheartedly endorse fantastic deals and top-notch services for both buyers and sellers. Above all, we at ShavathMart.com strongly uphold the value of superior products and exceptional customer service."</div>
 		                    </div>
 

@@ -124,7 +124,7 @@ function ProductDetail (  { items, user, setlogin, setSuccess, search, setSearch
 									                                 })
 					   .then(res =>  {
 						   				console.log("successfully deleted", res.data);
-						   				navigate("/home");
+						   				navigate("/");
 						   			})
 		                        .catch(err =>{
 										console.log(err.message)

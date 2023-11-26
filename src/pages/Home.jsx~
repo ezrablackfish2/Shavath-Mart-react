@@ -8,10 +8,29 @@ import SearchProduct from "../components/SearchProduct.jsx";
 import Bottom from "../components/Bottom.jsx";
 import useProducts from "../hooks/useProducts.jsx";
 import styles from "../components/Home.module.css";
+import load from '../public/loading.gif';
 
 
+interface HomeProps {
+	  shower: any; // Change 'any' to the specific type you're using
+	  remover: any; // Change 'any' to the specific type you're using
+	  user: any; // Change 'any' to the specific type you're using
+	  token: any; // Change 'any' to the specific type you're using
+	  setlogin: any;
+	  setSuccess: any;
+	  setSearch: () => void;
+	  products: any;
+	  error: any;
+	  isLoading: any;
+	  search: any;
+	  selectedAbout: any;
+	  selectedService: any;
+	  setSelectedService: any;
+	  setSelectedAbout: any;
+}
 
-function Home () {
+
+function Home (  { shower, remover, user, token, setlogin, setSuccess, products, error, isLoading, search, setSearch, setSelectedAbout, setSelectedService, selectedAbout, selectedService }: HomeProps   ) {
 	document.title = "Shavath Mart"
 	return (
  <>
@@ -23,7 +42,7 @@ function Home () {
 		      </div>
 		      <div className="flex justify-center mb-28">
 			{error && <p className={styles.rederror}> Shavath site request error code 404 page not found </p>}
-			{isLoading && <img src="/loading.gif" className={styles.loadhome} />}
+			{isLoading && <img src={load} className={styles.loadhome} />}
 			{ selectedAbout === "Shavath Mart" ?
 						<div className={styles.about}>
 						<div className={styles.abouttitle}>Shavath Mart</div>

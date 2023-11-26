@@ -1,138 +1,138 @@
 .footerlinking {
-		margin-left: 10px;
-			display: none;
-		}
+	margin-left: 10px;
+	display: none;
+}
 
-		.listing {
-				position: relative;
-					display: block;
-						padding: 10px;
-							text-align: left;
-								left: 10%;
-							}
+.listing {
+	position: relative;
+	display: block;
+	padding: 10px;
+	text-align: left;
+	left: 10%;
+}
 
-							.footerimage {
-									position: relative;
-										display: inline-block;
-											width: 25px;
-												top: 0px;
-													margin-bottom: 20px;
-														margin-right: 5px;
-													}
+.footerimage {
+	position: relative;
+	display: inline-block;
+	width: 25px;
+	top: 0px;
+	margin-bottom: 20px;
+	margin-right: 5px;
+}
 
-													.tablehead {
-															font-family: 'Barrio';
-															       font-size: 200%;
-														       }
-														       .tablebody {
-															       	font-family: 'Black Ops One';
-															}
+.tablehead {
+	font-family: 'Barrio';
+       font-size: 200%;
+}
+.tablebody {
+	font-family: 'Black Ops One';
+}
 
-															.table {
-																	width: 60%;
-																		border-collapse: separate;
-																			border-spacing: 6px;
-																		}
+.table {
+	width: 60%;
+	border-collapse: separate;
+	border-spacing: 6px;
+}
 
-																		.footertable {
-																				position: relative;
-																					display: inline-block;
-																						justify-content: center;
-																							text-align: center;
-																								width: 75%;
-																									left: 25%;
-																								}
+.footertable {
+	position: relative;
+	display: inline-block;
+	justify-content: center;
+	text-align: center;
+	width: 75%;
+	left: 25%;
+}
 
-																								.footerservice {
-																										display: none;
-																											position: relative;
-																												left: 30%;
-																													width: 20%;
-																														text-align: top;
-																															justify-content: top;
-																														}
-																														.footerlinks {
-																																display: none;
-																																	position: relative;
-																																		width: 20%;
-																																			right: -30%;
-																																				text-align: top;
-																																					justify-content: top;
-																																				}
+.footerservice {
+	display: none;
+	position: relative;
+	left: 30%;
+	width: 20%;
+	text-align: top;
+	justify-content: top;
+}
+.footerlinks {
+	display: none;
+	position: relative;
+	width: 20%;
+	right: -30%;
+	text-align: top;
+	justify-content: top;
+}
 
 
-																																				.footer {
+.footer {
 
-																																						position: relative;
-																																							display: inline-block;
-																																								color: #FFA818;
-																																									color: #ffffff;
-																																										background-color: #2C2E7B;
-																																											margin-top: 200px;
-																																												width: 100%;
+	position: relative;
+	display: inline-block;
+	color: #FFA818;
+	color: #ffffff;
+	background-color: #2C2E7B;
+	margin-top: 200px;
+	width: 100%;
 
-																																											}
+}
 
-																																											.footerdetail {
-																																													position: relative;
-																																														display: inline-block;
-																																															margin: 10%;
-																																																width: 70%;
-																																																	font-family: 'Black Ops One';
-																																																}
+.footerdetail {
+	position: relative;
+	display: inline-block;
+	margin: 10%;
+	width: 70%;
+	font-family: 'Black Ops One';
+}
 
-																																																.footerlogo {
-																																																		position: relative;
-																																																			display: inline-block;
-																																																				width: 120px;
-																																																					float: left;
-																																																						margin: 3%;
-																																																							margin-top: 0%;
-																																																						}
+.footerlogo {
+	position: relative;
+	display: inline-block;
+	width: 120px;
+	float: left;
+	margin: 3%;
+	margin-top: 0%;
+}
 
-																																																						@media (max-width: 1200px) {
-																																																								.footerimage {
-																																																											margin-right: 5px;
-																																																												}
-																																																											}
-																																																											@media (max-width: 1100px) {
-																																																													.footerimage {
-																																																																margin-right: 5px;
-																																																																	}
-																																																																}
+@media (max-width: 1200px) {
+	.footerimage {
+		margin-right: 5px;
+	}
+}
+@media (max-width: 1100px) {
+	.footerimage {
+		margin-right: 5px;
+	}
+}
 
-																																																																@media (max-width: 768px) {
-																																																																		.footertable {
-																																																																				left: 10%;
-																																																																			}
-																																																																		}
-																																																																		@media (max-width: 616px) {
-																																																																				.footerlinking {
-																																																																							display: none;
-																																																																								}
-																																																																									.footerimage {
-																																																																												margin-right: 5px;
-																																																																													}
-																																																																														.footertable {
-																																																																																	left: 3%
-																																																																																		}
-																																																																																			.tablehead {
-																																																																																						font-size: 140%;
-																																																																																							}
-																																																																																						}
-																																																																																						@media (max-width: 500px) {
-																																																																																								.footertable {
-																																																																																											left: 0%;
-																																																																																													margin-left: 0%;
-																																																																																															font-size: 90%;
-																																																																																																}
-																																																																																															}
+@media (max-width: 768px) {
+	.footertable {
+	left: 10%;
+}
+}
+@media (max-width: 616px) {
+	.footerlinking {
+		display: none;
+	}
+	.footerimage {
+		margin-right: 5px;
+	}
+	.footertable {
+		left: 3%
+	}
+	.tablehead {
+		font-size: 140%;
+	}
+}
+@media (max-width: 500px) {
+	.footertable {
+		left: 0%;
+		margin-left: 0%;
+		font-size: 90%;
+	}
+}
 
-																																																																																															@media (max-width: 435px) {
-																																																																																																	.footertable {
-																																																																																																				display: none;
-																																																																																																					}
-																																																																																																						.footerlogo {
-																																																																																																									width: 70px;
-																																																																																																										}
-																																																																																																									}
+@media (max-width: 435px) {
+	.footertable {
+		display: none;
+	}
+	.footerlogo {
+		width: 70px;
+	}
+}
