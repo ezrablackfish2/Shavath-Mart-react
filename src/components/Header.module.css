@@ -1,0 +1,283 @@
+.searchbutton {
+		width: 200px;;
+	}
+
+	.searchbuttonlink {
+			display: inline-block;
+				display: none;
+			}
+
+			.searchlink {
+					display: none;
+				}
+
+
+				.selectoptions {
+						position: absolute;
+							top: 100%;
+								left: 0;
+									right: 0;
+										display: none;
+									}
+
+									.headersorter {
+											background-color: #ffffff;
+												padding: 5px 5px 5px 5px;
+													border: none;
+														font-family: 'Bellota', cursive;
+															cursor: pointer;
+														}
+
+														.headersortbox {
+																position: relative;
+																	display: inline-block;
+																		left: 10%;
+																	}
+
+																	.dropdowns {
+																			position: relative;
+																				display: inline-block;
+																					width: 60%;
+																						left: 40%;
+																					}
+																					.dropdownsfixed {
+																							position: fixed;
+																								top: 0;
+																									left: 40%;
+																										width: 60%;
+																											color: #000000;
+																												z-index: 999;
+																													font-weight: 999;
+																												}
+																												.header {
+																														position: relative;
+																															display: inline-block;
+																																width: 100%;
+																																	color: #ffffff;
+																																		background-color: #2C2E7B;
+																																			height: 35px;
+																																		}
+																																		.headermedia {
+																																				position: relative;
+																																					display: inline;
+																																				}
+																																				.headeritems {
+																																						position: relative;
+																																							display: inline-block;
+																																								right: 0%;
+																																									margin-right: 2%;
+																																								}
+
+																																								.headerlink {
+																																										position: relative;
+																																									}
+																																									.headerimages {
+																																											position: relative;
+																																												top: 5px;
+																																													right: 1%;
+																																														width: 25px;
+																																													}
+
+																																													.headerphone {
+																																															left: 15%;
+																																																position: relative;
+																																																	display: inline-block;
+																																																		font-size: 80%;
+																																																			font-family: 'Bellota', cursive;
+																																																				margin-right: 2%;
+																																																			}
+
+																																																			.headergmail {
+																																																					left: 20%;
+																																																						position: relative;
+																																																							display: inline-block;
+																																																								font-family: 'Bellota', cursive;
+																																																									font-size: 90%;
+																																																										width: 55%;
+																																																									}
+																																																									.headerphoneimage {
+																																																											display: inline-block;
+																																																												width: 20px;
+																																																													margin-right: 5px;
+																																																												}
+
+																																																												.headergmailimage {
+																																																														display: inline-block;
+																																																															width: 20px;
+																																																																margin-right: 5px;
+																																																															}
+
+																																																															.navigationbar {
+																																																																	display: inline-block;
+																																																																		width: 100%;
+																																																																	}
+
+																																																																	.logo {
+																																																																			display: inline-block;
+																																																																				position: relative;
+																																																																					width: 100px;
+																																																																						left: 10%;
+																																																																							margin-right: 17%;
+																																																																						}
+																																																																						.Search {
+																																																																								display: inline-block;
+																																																																									position: relative;
+																																																																										right: 0%;
+																																																																											font-family: 'Bellota', cursive;
+																																																																												width: 60%;
+																																																																											}
+																																																																											.searchbar {
+																																																																													width: 80%;
+																																																																														border: solid;
+																																																																															border-width: 0.00001px;
+																																																																																border-radius: 10px 10px 10px 10px;
+																																																																																	margin-right: 5px;
+																																																																																		padding: 15px 15px 15px 15px;
+																																																																																	}
+
+																																																																																	.searchimage {
+																																																																																			position: inline-block;
+																																																																																				width: 25%;
+																																																																																					top: 6px;
+																																																																																						position: relative;
+																																																																																							display: none;
+																																																																																						}
+
+																																																																																						@media (max-width: 1024px) {
+																																																																																								.dropdowns {
+																																																																																											display: none;
+																																																																																												}
+																																																																																													.dropdownsfixed {
+																																																																																																display: none;
+																																																																																																	}
+																																																																																																}
+
+																																																																																																@media (max-width: 856px) {
+																																																																																																		.searchbuttonlink {
+																																																																																																					display: none;
+																																																																																																						}
+																																																																																																							.searchlink {
+																																																																																																										display: inline-block;
+																																																																																																												display: none;
+																																																																																																													}
+																																																																																																														.searchbar {
+																																																																																																																	display: inline-block;
+																																																																																																																			margin-top: 15px;
+																																																																																																																					padding-top: 5px;
+																																																																																																																							padding-bottom: 5px;
+																																																																																																																									margin-right: 0px;
+																																																																																																																											padding-right: 0px;
+																																																																																																																												}
+																																																																																																																													.searchimage {
+																																																																																																																																position: absolute;
+																																																																																																																																		top: -70px;
+																																																																																																																																				width: 30px;
+																																																																																																																																						right: 0%;
+																																																																																																																																							}
+																																																																																																																																						}
+
+																																																																																																																																						@media (max-width: 599px) {
+																																																																																																																																								.header {
+																																																																																																																																											height: 80px;
+																																																																																																																																													width: 80%;
+																																																																																																																																															border-radius: 10px 10px 10px 10px;
+																																																																																																																																																	margin-right: 0px;
+																																																																																																																																																		}
+																																																																																																																																																			.headerphone {
+																																																																																																																																																						left: 40%;
+																																																																																																																																																							}
+																																																																																																																																																								.searchimage {
+																																																																																																																																																											width: 70px;
+																																																																																																																																																													top: -90px;
+																																																																																																																																																															right: -14%;
+																																																																																																																																																																	margin-left: 0px;
+																																																																																																																																																																		}
+																																																																																																																																																																			.headergmail {
+																																																																																																																																																																						left: 30%;
+																																																																																																																																																																								display: block;
+																																																																																																																																																																									}
+																																																																																																																																																																										.headermedia {
+																																																																																																																																																																													left: 25%;
+																																																																																																																																																																															display: block;
+																																																																																																																																																																																}
+																																																																																																																																																																																	.headerimages {
+																																																																																																																																																																																				margin-right: 25px;
+																																																																																																																																																																																					}
+																																																																																																																																																																																						.logo {
+																																																																																																																																																																																									left: 2%;
+																																																																																																																																																																																											top: -70px;
+																																																																																																																																																																																													width: 50px;
+																																																																																																																																																																																															border-radius: 75%;
+																																																																																																																																																																																																}
+																																																																																																																																																																																															}
+
+																																																																																																																																																																																															@media (max-width: 448px) {
+																																																																																																																																																																																																	.searchimage {
+																																																																																																																																																																																																				top: -120px;
+																																																																																																																																																																																																						right: 0%;
+																																																																																																																																																																																																								width: 20%;
+																																																																																																																																																																																																										z-index: 999;
+																																																																																																																																																																																																											}
+																																																																																																																																																																																																												.header {
+																																																																																																																																																																																																															left: 0px;
+																																																																																																																																																																																																																	height: 120px;
+																																																																																																																																																																																																																			width: 100%;
+																																																																																																																																																																																																																				}
+																																																																																																																																																																																																																					.headergmail {
+																																																																																																																																																																																																																								left: 30%;
+																																																																																																																																																																																																																									}
+																																																																																																																																																																																																																										.headermedia {
+																																																																																																																																																																																																																													display: inline-block;
+																																																																																																																																																																																																																														}
+																																																																																																																																																																																																																															.headerphone {
+																																																																																																																																																																																																																																		display: inline-block;
+																																																																																																																																																																																																																																			}
+																																																																																																																																																																																																																																				.headerimages {
+																																																																																																																																																																																																																																							position: relative;
+																																																																																																																																																																																																																																									display: inline-block;
+																																																																																																																																																																																																																																											left: 40%;
+																																																																																																																																																																																																																																													margin-right: 5px;
+																																																																																																																																																																																																																																														}
+																																																																																																																																																																																																																																															.headergmailimage {
+																																																																																																																																																																																																																																																		margin-right: 0px;
+																																																																																																																																																																																																																																																				width: 15px;
+																																																																																																																																																																																																																																																					}
+																																																																																																																																																																																																																																																						.headerphoneimage {
+																																																																																																																																																																																																																																																									margin-right: 0px;
+																																																																																																																																																																																																																																																										}
+																																																																																																																																																																																																																																																											.headerphone {
+																																																																																																																																																																																																																																																														margin-right: 0px;
+																																																																																																																																																																																																																																																															}
+																																																																																																																																																																																																																																																																.headerimages {
+																																																																																																																																																																																																																																																																			right: 0px;
+																																																																																																																																																																																																																																																																				}
+																																																																																																																																																																																																																																																																					.headeritems {
+																																																																																																																																																																																																																																																																								margin-right: 0px;
+																																																																																																																																																																																																																																																																									}
+																																																																																																																																																																																																																																																																										.logo {
+																																																																																																																																																																																																																																																																													top: -100px;
+																																																																																																																																																																																																																																																																														}
+																																																																																																																																																																																																																																																																													}
+																																																																																																																																																																																																																																																																													@media (max-width: 270px) {
+																																																																																																																																																																																																																																																																															.headergmailimage {
+																																																																																																																																																																																																																																																																																		display: none;
+																																																																																																																																																																																																																																																																																			}
+																																																																																																																																																																																																																																																																																				.logo {
+																																																																																																																																																																																																																																																																																							left: 0%;
+																																																																																																																																																																																																																																																																																								}
+																																																																																																																																																																																																																																																																																									.searchimage {
+																																																																																																																																																																																																																																																																																												right: -2%;
+																																																																																																																																																																																																																																																																																														top: -120px;
+																																																																																																																																																																																																																																																																																															}
+																																																																																																																																																																																																																																																																																																.searchbar {
+																																																																																																																																																																																																																																																																																																			position: relative;
+																																																																																																																																																																																																																																																																																																					display: inline-block;
+																																																																																																																																																																																																																																																																																																							left: 0%;
+																																																																																																																																																																																																																																																																																																								}
+																																																																																																																																																																																																																																																																																																							}
+																																																																																																																																																																																																																																																																																																							@media (max-width: 232px) {
+																																																																																																																																																																																																																																																																																																									.searchimage {
+																																																																																																																																																																																																																																																																																																												right: -50%;
+																																																																																																																																																																																																																																																																																																														top: -160px;
+																																																																																																																																																																																																																																																																																																															}
+																																																																																																																																																																																																																																																																																																														}

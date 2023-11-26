@@ -1,0 +1,193 @@
+.nuller {
+		display: none;
+	}
+
+	.dropsItems:hover {
+			background-color: #000000;
+				border-radius: 5px 5px 5px 5px;
+			}
+
+			.sorter {
+					cursor: pointer;
+					        background-color: #FFA922;
+							background-color: #2C2E7B;
+								color: #ffffff;
+								        border-radius: 5px 5px 5px 5px;
+										padding-left: 15px;
+											padding-right: 15px;
+												padding-top: 10px;
+													padding-bottom: 10px;
+														width: 160px;
+
+													}
+													.drops {
+															position: absolute;
+																width: 90%;
+																	background-color: #FFA922;
+																		background-color: #2C2E7B;
+																		        color: #ffffff;
+																				border-radius: 5px 5px 5px 5px;
+																					padding: 15px;
+																				}
+
+																				.sortall {
+																						position: relative;
+																							display: inline-block;
+																								font-family: 'Bellota', cursive;
+																									padding: 10px;
+																										cursor: pointer;
+																											z-index: 999;
+																										}
+
+																										.select4open {
+																												top: -20px;
+																													position: relative;
+																													        left: 48%;
+																														        display: inline-block;
+																															        padding: 10px;
+																																        font-family: 'Bellota', cursive;
+																																	        cursor: pointer;
+
+																																	}
+
+
+																																	.select3open {
+																																			top: -20px;
+																																				position: relative;
+																																				        left: 32%;
+																																					        display: inline-block;
+																																						        padding: 10px;
+																																							        font-family: 'Bellota', cursive;
+																																								        cursor: pointer;
+
+																																								}
+
+																																								.hiddenword {
+																																										display: none;
+																																									}
+
+																																									.dropdown2 {
+																																											border-radius: 15px 15px 15px 15px;
+																																												display: inline-block;
+																																													position: relative;
+																																														width: 200px;
+																																													}
+
+																																													.select2 {
+																																															position: relative;
+																																																display: inline-block;
+																																																	padding: 10px;
+																																																		font-family: 'Bellota', cursive;
+																																																			cursor: pointer;
+																																																		}
+																																																		.select2open {
+																																																				top: -20px;
+																																																					position: relative;
+																																																						left: 16%;
+																																																							display: inline-block;
+																																																								padding: 10px;
+																																																									font-family: 'Bellota', cursive;
+																																																										cursor: pointer;
+																																																									}
+
+																																																									.options2 {
+																																																										  position: relative;
+																																																										    top: -35px;
+																																																										      left: -200;
+																																																										        right: 200px;
+																																																											  height: 300px;
+																																																											    display: none;
+																																																											      background-color: #fff;
+																																																											        border: 1px solid #ccc;
+																																																												  border-top: none;
+																																																												    z-index: 1;
+																																																												    	transition-property: display;
+																																																													        transition-duration: 0.2s;
+																																																													}
+
+																																																													.dropdownopen2 .options2 {
+																																																															background-color: #FFA922;
+																																																																position: relative;
+																																																																	display: inline-block;
+																																																																		width: 80%;
+																																																																			transition-property: display;
+																																																																				transition-duration: 0.2s;
+																																																																			}
+
+																																																																			.option2 {
+																																																																				        font-family: 'Bellota', cursive;
+																																																																						padding: 10px;
+																																																																							cursor: pointer;
+																																																																						}
+
+																																																																						.option2:hover {
+																																																																							  background-color: #f0f0f0;
+																																																																						  }
+
+
+
+																																																																						  .selectorword {
+																																																																							  	display: inline-block;
+																																																																									position: relative;
+																																																																								}
+																																																																								.imagebox {
+																																																																										display: inline-block;
+																																																																											position: relative;
+																																																																										}
+
+																																																																										.dropdownarrow {
+																																																																												display: inline-block;
+																																																																													position: relative;
+																																																																														width: 30px;
+																																																																															left: 100%;
+																																																																														}
+
+																																																																														.dropdown {
+																																																																																border-radius: 15px 15px 15px 15px;
+																																																																																	display: inline-block;
+																																																																																		position: relative;
+																																																																																			width: 210px;
+																																																																																		}
+
+																																																																																		.select {
+																																																																																				position: relative;
+																																																																																					display: inline-block;
+																																																																																						padding: 10px;
+																																																																																							font-family: 'Bellota', cursive;
+																																																																																								cursor: pointer;
+																																																																																							}
+
+																																																																																							.options {
+																																																																																								  position: relative;
+																																																																																								    top: -15px;
+																																																																																								      left: -200;
+																																																																																								        right: 200px;
+																																																																																									  height: 300px;
+																																																																																									    bottom: 0;
+																																																																																									      display: none;
+																																																																																									        background-color: #fff;
+																																																																																										  border: 1px solid #ccc;
+																																																																																										    border-top: none;
+																																																																																										      z-index: 1;
+																																																																																										        transition-property: display;
+																																																																																											  transition-duration: 0.2s;
+																																																																																										  }
+
+																																																																																										  .dropdownopen .options {
+																																																																																											  	background-color: #FFA922;
+																																																																																													position: relative;
+																																																																																														display: inline-block;
+																																																																																															width: 80%;
+																																																																																																transition-property: display;
+																																																																																																        transition-duration: 0.2s;
+																																																																																																}
+
+																																																																																																.option {
+																																																																																																	        font-family: 'Bellota', cursive;
+																																																																																																			padding: 10px;
+																																																																																																				cursor: pointer;
+																																																																																																			}
+
+																																																																																																			.option:hover {
+																																																																																																				  background-color: #f0f0f0;
+																																																																																																			  }
