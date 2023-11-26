@@ -3,6 +3,7 @@ import axios, { AxiosResponse, AxiosError } from 'axios';
 import styles from '../components/Signup.module.css';
 import Header from '../components/Header.jsx';
 import { useNavigate } from 'react-router-dom';
+import logo from '../public/logo.jpg'
 
 
 
@@ -118,7 +119,7 @@ function Login({ user, token, formData, setFormData, loggedin, setlogin, respons
 				      ) : (
 					              <>
 					                <div className={styles.login}>
-					                  <img className={styles.signupimage} src="./logo.jpg" alt="Logo" />
+					                  <img className={styles.signupimage} src={logo} alt="Logo" />
 					                  <h1 className={styles.logintitle}>Sign In</h1>
 					                  <p
 					                    className={errMsg ? `${styles.rederror}` : 'offscreen'}
