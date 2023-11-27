@@ -117,6 +117,9 @@
         .logintitle {
                 font-size: 150%;
         }
+	.login {
+		width: 50%;
+	}
 }
 
 @media (max-width: 380px) {

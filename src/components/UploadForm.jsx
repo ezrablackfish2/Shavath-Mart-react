@@ -44,7 +44,7 @@ const UploadForm: React.FC<UploadFormProps> = ({ onUpload, user, token }) => {
 		      if (user && token) {
 			            const formData = new FormData();
 			            formData.append('name', name);
-			            formData.append('price', parseFloat(price).toFixed(2));
+			            formData.append('price', price != '' ? parseFloat(price).toFixed(2) : 'TBA in ');
 			            if (image) {
 					            formData.append('img', image);
 					          }

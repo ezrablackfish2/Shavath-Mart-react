@@ -103,7 +103,7 @@
 	display: inline-block;
 	border-radius: 5px 5px 5px 5px;
 	border: solid;
-	width: 90%;
+	width: 85%;
 	margin: 5%;
 	border-width: 0.0001px;
 	padding: 25px;
@@ -122,7 +122,16 @@
 }
 
 
-
+@media (max-width: 1024px) {
+	.uploadbody {
+		width: 80%;
+	}
+}
+@media (max-width: 450px) {
+	.uploadbody {
+		width: 70%;
+	}
+}
 @media (max-width: 280px) {
 	.uploadtitle {
 		font-size: 150%;
