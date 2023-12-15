@@ -1,3 +1,34 @@
+a {
+	text-decoration: none;
+}
+
+.whitelink {
+	color: #ffffff;
+}
+.whitelink:hover {
+	color: #ffffff
+}
+.upload {
+	position: relative;
+	display: inline-block;
+	background-color: #108a00;
+	background-color: #ffffff;
+	background-color: #2C2E7B;;
+	width: 75px;
+	height: 40px;
+	padding: 10px;
+	border: solid;
+	border-width: 0.00001px;
+	border-radius: 15px 15px 15px 15px;
+	font-family: 'Chakra Petch';	
+}
+
+.upload:hover {
+	background-color: #14a800;
+	color: #ffffff;
+
+}
+
 .searchbutton {
 	width: 200px;;
 }

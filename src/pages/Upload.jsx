@@ -25,7 +25,7 @@ const Upload: React.FC<UploadProps> = ({ user, token, setSuccess, setlogin, sear
 		          rel="stylesheet"
 		        />
 
-		        <Header setlogin={setlogin} setSuccess={setSuccess} search={search} setSearch={setSearch} selectedService={selectedService} selectedAbout={selectedAbout} setSelectedService={setSelectedService} setSelectedAbout={setSelectedAbout}/>
+		        <Header user={user} token={token} setlogin={setlogin} setSuccess={setSuccess} search={search} setSearch={setSearch} selectedService={selectedService} selectedAbout={selectedAbout} setSelectedService={setSelectedService} setSelectedAbout={setSelectedAbout}/>
 
 
 		        <UploadPage user={user} token={token} />
