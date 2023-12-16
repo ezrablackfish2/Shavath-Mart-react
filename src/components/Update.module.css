@@ -1,0 +1,19 @@
+.updatebutton {
+	position: relative;
+	display: inline-block;
+	background-color: #108a00;
+	background-color: #ffffff;
+	width: 75px;
+	padding: 10px;
+	left: 0%;
+	border: solid;
+	border-width: 0.00001px;
+	border-radius: 15px 15px 15px 15px;
+	font-family: 'Chakra Petch';	
+}
+
+.updatebutton:hover {
+	background-color: #14a800;
+	color: #ffffff;
+
+}

@@ -7,6 +7,7 @@ import white from "../public/white.jpg";
 import apiClient from "../api/api-client-hero-axios.jsx";
 import Header from '../components/Header.jsx';
 import st from '../components/Signup.module.css';
+import s from "../components/Update.module.css";
 
 interface UploadProps {
 	  user: any; 
@@ -120,9 +121,10 @@ function UpdateHero( { user, token, setSuccess, setlogin, search, setSearch, set
 			            />
 			            {imagePreview && <img src={imagePreview} alt="Image Preview" className={styl.previewImage} />}
 
-			            <button className={styl.uploadupdatebutton} type="submit">
-			              Update Product
+			            <button className={s.updatebutton} type="submit">
+			              Update Logo
 			            </button>
+
 			          </form>
 			      	</div>
 			              </>
