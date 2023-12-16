@@ -10,6 +10,7 @@ import useProducts from "./hooks/useProducts.jsx";
 import useHeroes from "./hooks/useHeroes.jsx";
 import Upload from "./pages/Upload.jsx";
 import UploadHero from "./pages/UploadHero.jsx";
+import UpdateHero from "./components/UpdateHero.jsx";
 
 
 
@@ -71,6 +72,7 @@ function App() {
 	  	  	<Route path="/login" element={<Login shower={shower} remover={remover} user={user} token={token} formData={loginData} setFormData={setLoginData} loggedin={loggedin} setlogin={setlogin} setToken={setToken} setUser={setUser} products={products} error={error} isLoading={isLoading} search={search} setSearch={setSearch} selectedService={selectedService} selectedAbout={selectedAbout} setSelectedService={setSelectedService} setSelectedAbout={setSelectedAbout}/>} />
 	  	  	<Route path="/upload" element={<Upload shower={shower} remover={remover} user={user} token={token} formData={loginData} setFormData={setLoginData} loggedin={loggedin} setlogin={setlogin} setToken={setToken} setUser={setUser} products={products} error={error} isLoading={isLoading} search={search} setSearch={setSearch} selectedService={selectedService} selectedAbout={selectedAbout} setSelectedService={setSelectedService} setSelectedAbout={setSelectedAbout}/>} />
 	  	  	<Route path="/upload-cover" element={<UploadHero shower={shower} remover={remover} user={user} token={token} formData={loginData} setFormData={setLoginData} loggedin={loggedin} setlogin={setlogin} setToken={setToken} setUser={setUser} products={products} error={error} isLoading={isLoading} search={search} setSearch={setSearch} selectedService={selectedService} selectedAbout={selectedAbout} setSelectedService={setSelectedService} setSelectedAbout={setSelectedAbout}/>} />
+	  	  	<Route path="/update-cover" element={<UpdateHero shower={shower} remover={remover} user={user} token={token} formData={loginData} setFormData={setLoginData} loggedin={loggedin} setlogin={setlogin} setToken={setToken} setUser={setUser} products={products} error={error} isLoading={isLoading} search={search} setSearch={setSearch} selectedService={selectedService} selectedAbout={selectedAbout} setSelectedService={setSelectedService} setSelectedAbout={setSelectedAbout}/>} />
 	  	  </Routes>
 	  	  </Router>
 	  	  </div>
