@@ -1,5 +1,5 @@
 import { useState } from "react"; 
-import apiClient from "../api/api-client-axios.jsx";
+import apiClient from "../api/api-client-hero-axios.jsx";
 import { useEffect } from "react";
 
 interface Props {
@@ -7,27 +7,27 @@ interface Props {
 		token: any;
 }
 
-function useProducts({user, token}: Props) {
-	        const [products, setProducts ] = useState([]);
-	        const [error, setError] = useState("");
-	        const [isLoading, setLoading] = useState(false);
+function useHeroes({user, token}: Props) {
+	        const [heroes, setHeroes ] = useState([]);
+	        const [err, setErr] = useState("");
+	        const [isLoad, setLoad] = useState(false);
 
 	        useEffect(() => {
 			
 		if (!token && !user) {
-			setLoading(true);
+			setLoad(true);
 	                apiClient.get("")
                         .then(res =>  {
-				setProducts(res.data);
+				setHeroes(res.data);
 				console.log(res.data);
-				setLoading(false);
+				setLoad(false);
 			})
                         .catch(err =>{
-				setError(err.message)
-				setLoading(false);
+				setErr(err.message)
+				setLoad(false);
 			});
 			} else if (token && user) {
-		                setLoading(true);
+		                setLoad(true);
 		                apiClient.get("" ,
 				{
                                 headers: {
@@ -36,17 +36,17 @@ function useProducts({user, token}: Props) {
                         },
 		})
                     .then(res =>  {
-                               setProducts(res.data);
+                               setHeroes(res.data);
 				console.log(res.data);
-                                setLoading(false);
+                                setLoad(false);
                         })
                         .catch(err =>{
-                               setError(err.message)
-                             setLoading(false);
+                               setErr(err.message)
+                             setLoad(false);
                         });
 		}
 			        }, []);
-		return {products, error, isLoading};
+		return {heroes, err, isLoad};
 };
 
-export default useProducts;
+export default useHeroes;

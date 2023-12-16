@@ -10,7 +10,7 @@ import social_handles from '../utils/social_handles.jsx'
 import gmail from '../public/gmail.png'
 import phone from '../public/phone.png'
 import logo from '../public/logo.jpg';
-
+import styl from "./Upload.module.css";
 
 
 
@@ -24,9 +24,11 @@ interface HeaderProps {
 	  selectedService: any;
 	  setSelectedAbout: (value: any) => void;
 	  setSelectedService: (value: any) => void;
+	  user: any;
+	  token: any;
 }
 
-export default function Header({ setlogin, setSuccess, search, setSearch, selectedAbout, selectedService, setSelectedAbout, setSelectedService }: HeaderProps) {
+export default function Header({ user, token, setlogin, setSuccess, search, setSearch, selectedAbout, selectedService, setSelectedAbout, setSelectedService }: HeaderProps) {
 	  const [selectedNews, setSelectedNews] = useState("News");
 	  const [selectedCurrency, setSelectedCurrency] = useState("Currency");
 	  const [selectOpen, setSelectOpen] = useState(false);
@@ -61,7 +63,7 @@ export default function Header({ setlogin, setSuccess, search, setSearch, select
 		                src={phone}
 		                alt="Phone Image"
 		              />
-		              +251913657294
+		              +251912243671
 		            </button>
 		          </div>
 		          <div className={styles.headerdiv}>
@@ -75,7 +77,8 @@ export default function Header({ setlogin, setSuccess, search, setSearch, select
 		            </a>
 		          </div>
 		          <div className={styles.headermedia}>
-		            {social_handles.map(({ icon, link }) => (
+
+		  {social_handles.map(({ icon, link }) => (
 				                <div className={styles.headeritems} key={link}>
 				                  <a className={styles.headerlink} href={link}>
 				                    <img

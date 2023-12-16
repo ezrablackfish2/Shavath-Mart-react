@@ -152,18 +152,19 @@ function ProductDetail (  { items, user, setlogin, setSuccess, search, setSearch
 
 	function ProductUpdater(formData2: any) {
 			console.log(formData2);
-				 apiClient.post(`update/` ,
+				 apiClient.put(`update/${item.id}` ,
 					 			formData2,
 					                         {
 									                                 headers: {
-														                                 'Content-Type': 'application/json',
+														                                 'Content-Type': 'multipart/form-data',
 														                                 Authorization: `Bearer ${token}`,
 														                         },
 
 									                                 })
 					   .then(res =>  {
-						   				console.log("successfully update", res.data);
-						   			})
+						   	console.log("successfully update", res.data);
+						   	window.location.reload();
+						   					   			})
 		                        .catch(err =>{
 										console.log(err.message)
 									});
@@ -173,6 +174,14 @@ function ProductDetail (  { items, user, setlogin, setSuccess, search, setSearch
   const handleUpdate = (e: React.FormEvent) => {
 	      e.preventDefault();
 	      if (user && token) {
+		const formData = new FormData();
+			            formData.append('name', name != '' ? name: item.name);
+			            formData.append('price', price != '' ? parseFloat(price).toFixed(2) : item.price);
+				    formData.append('img', image != null ? image:  item.img);
+			            formData.append('color', color != '' ? color: item.color);
+			            formData.append('category', category != ''? category : item.category);
+			            formData.append('description', description != '' ? description : item.description);
+			            formData.append('isAvailable', `${availability}`);      
 	        const formData2 = {
 			        id : item.id ,
 			      name: name != '' ? name: item.name,
@@ -183,7 +192,8 @@ function ProductDetail (  { items, user, setlogin, setSuccess, search, setSearch
 			      description: description != '' ? description : item.description,
 			      isAvailable: availability,
 			        }
-		            ProductUpdater(formData2);
+		            console.log(image);
+		            ProductUpdater(formData);
 		     	    } else {
 				        }
 	    };
@@ -192,7 +202,7 @@ function ProductDetail (  { items, user, setlogin, setSuccess, search, setSearch
  <>
 		    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;400&family=Aguafina+Script&family=Amatic+SC&family=Barrio&family=Bellota:wght@300&family=Black+Ops+One&family=Caveat&family=Chakra+Petch:ital,wght@1,300&family=Cinzel&family=Cookie&family=Croissant+One&family=Dancing+Script&family=Faster+One&family=Fuggles&family=Gugi&family=Hammersmith+One&family=Homemade+Apple&family=Itim&family=Lilita+One&family=Montserrat+Alternates:wght@100&family=Nothing+You+Could+Do&family=Orbitron&family=Playball&family=Rajdhani&family=Satisfy&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&family=Space+Mono&family=Tilt+Prism&family=Yellowtail&display=swap" rel="stylesheet" />
 
-		      <Header setlogin={setlogin} setSuccess={setSuccess} search={search} setSearch={setSearch} selectedService={selectedService} selectedAbout={selectedAbout} setSelectedService={setSelectedService} setSelectedAbout={setSelectedAbout}/>
+		      <Header user={user} token={token} setlogin={setlogin} setSuccess={setSuccess} search={search} setSearch={setSearch} selectedService={selectedService} selectedAbout={selectedAbout} setSelectedService={setSelectedService} setSelectedAbout={setSelectedAbout}/>
 
 			<div className={styles.productdetail}>
 		      <img className={styles.detailimage} src={imageURI} alt={item.name} />
@@ -210,7 +220,7 @@ function ProductDetail (  { items, user, setlogin, setSuccess, search, setSearch
 		      {user && token ? (
 			              <>
 			      	<div className={styl.uploadbody}>
-			            <h1 className={styl.uploadtitle}>Update Data</h1>
+			            <h1 className={styl.uploadtitle}>Update Product</h1>
 			      	<form className={styl.uploadform} onSubmit={handleUpdate}>
 			            <label className={styl.labeltitle}>Product Name</label>
 			            <input

@@ -3,12 +3,12 @@ import UploadForm from './UploadForm.jsx';
 import { uploadData } from './api.jsx';
 import styles from '../components/Upload.module.css';
 
-interface UploadPageProps {
+interface UploadHeroPageProps {
 	  user: any;
 	  token: string;
 }
 
-const UploadPage: FC<UploadPageProps> = ({ user, token }) => {
+const UploadHeroPage: FC<UploadPageProps> = ({ user, token }) => {
 	  const handleUpload = async (formData: FormData) => {
 		      try {
 			            const response = await uploadData(formData, token);
@@ -20,11 +20,11 @@ const UploadPage: FC<UploadPageProps> = ({ user, token }) => {
 
 	  return (
 		      <div className={styles.uploadbody}>
-		        <h1 className={styles.uploadtitle}>Upload A Product</h1>
+		        <h1 className={styles.uploadtitle}>Upload Data</h1>
 		        <UploadForm user={user} token={token} onUpload={handleUpload} />
 		      </div>
 		    );
 };
 
-export default UploadPage;
+export default UploadHeroPage;
 

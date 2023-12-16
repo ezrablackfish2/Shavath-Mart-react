@@ -1,5 +1,5 @@
 import React from 'react';
-import UploadPage from '../components/UploadPage.jsx';
+import UploadHeroPage from '../components/UploadHero.jsx';
 import styles from '../components/Upload.module.css';
 import Header from '../components/Header.jsx';
 
@@ -17,7 +17,7 @@ interface UploadProps {
 }
 
 const Upload: React.FC<UploadProps> = ({ user, token, setSuccess, setlogin, search, setSearch, setSelectedAbout, setSelectedService, selectedAbout, selectedService }) => {
-	document.title = "Upload A Product"
+	document.title = "Upload Cover"
 	  return (
 		      <>
 		        <link
@@ -28,7 +28,7 @@ const Upload: React.FC<UploadProps> = ({ user, token, setSuccess, setlogin, sear
 		        <Header user={user} token={token} setlogin={setlogin} setSuccess={setSuccess} search={search} setSearch={setSearch} selectedService={selectedService} selectedAbout={selectedAbout} setSelectedService={setSelectedService} setSelectedAbout={setSelectedAbout}/>
 
 
-		        <UploadPage user={user} token={token} />
+		        <UploadHeroPage user={user} token={token} />
 		      </>
 		    );
 };

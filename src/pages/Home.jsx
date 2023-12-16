@@ -1,5 +1,5 @@
 import Header from "../components/Header.jsx";
-import Hero from "../components/Hero.jsx";
+import HeroMap from "../components/HeroMap.jsx";
 import Search from "../components/Search.jsx";
 import Products from "../components/Products.jsx";
 import Footer from "../components/Footer.jsx";
@@ -12,10 +12,10 @@ import load from '../public/loading.gif';
 
 
 interface HomeProps {
-	  shower: any; // Change 'any' to the specific type you're using
-	  remover: any; // Change 'any' to the specific type you're using
-	  user: any; // Change 'any' to the specific type you're using
-	  token: any; // Change 'any' to the specific type you're using
+	  shower: any; 
+	  remover: any;
+	  user: any; 
+	  token: any; 
 	  setlogin: any;
 	  setSuccess: any;
 	  setSearch: () => void;
@@ -27,16 +27,18 @@ interface HomeProps {
 	  selectedService: any;
 	  setSelectedService: any;
 	  setSelectedAbout: any;
+	  heroes: any;
 }
 
 
-function Home (  { shower, remover, user, token, setlogin, setSuccess, products, error, isLoading, search, setSearch, setSelectedAbout, setSelectedService, selectedAbout, selectedService }: HomeProps   ) {
+function Home (  { shower, remover, user, token, setlogin, setSuccess, products, error, isLoading, search, setSearch, setSelectedAbout, setSelectedService, selectedAbout, selectedService, heroes }: HomeProps   ) {
 	document.title = "Shavath Mart"
 	return (
  <>
 		      <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;400&family=Aguafina+Script&family=Amatic+SC&family=Barrio&family=Bellota:wght@300&family=Black+Ops+One&family=Caveat&family=Chakra+Petch:ital,wght@1,300&family=Cinzel&family=Cookie&family=Croissant+One&family=Dancing+Script&family=Faster+One&family=Fuggles&family=Gugi&family=Hammersmith+One&family=Homemade+Apple&family=Itim&family=Lilita+One&family=Montserrat+Alternates:wght@100&family=Nothing+You+Could+Do&family=Orbitron&family=Playball&family=Rajdhani&family=Satisfy&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&family=Space+Mono&family=Tilt+Prism&family=Yellowtail&display=swap" rel="stylesheet" />
-		      <Header setlogin={setlogin} setSuccess={setSuccess} search={search} setSearch={setSearch} selectedService={selectedService} selectedAbout={selectedAbout} setSelectedService={setSelectedService} setSelectedAbout={setSelectedAbout}/>
-		      <Hero />
+		      <Header user={user} token={token} setlogin={setlogin} setSuccess={setSuccess} search={search} setSearch={setSearch} selectedService={selectedService} selectedAbout={selectedAbout} setSelectedService={setSelectedService} setSelectedAbout={setSelectedAbout}/>
+		{ console.log("home heroes", heroes) }
+		      <HeroMap heroes={heroes} />
 		      <div className={styles.homesearch}>
 		        <SearchProduct search={search} setSearch={setSearch}/>
 		      </div>
@@ -73,7 +75,7 @@ function Home (  { shower, remover, user, token, setlogin, setSuccess, products,
 					        <Products data={products} search={search} selectedService={selectedService} />
 						}
 		      </div>
-		      <Bottom />
+		      <Bottom user={user} token={token}/>
 		      <Footer />
 		    </>
 	);

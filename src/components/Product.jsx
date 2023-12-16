@@ -4,7 +4,7 @@ import white from "../public/white.jpg";
 
 type ProductProps = {
 		product : {
-				_id : string;
+				id : string;
 				name : string;
 				price : string;
 				color : string;

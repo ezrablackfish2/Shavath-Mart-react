@@ -7,8 +7,10 @@ import Home from './pages/Home.jsx'
 import Login from './pages/Login.jsx'
 import ProductDetail from './pages/ProductDetail.jsx'
 import useProducts from "./hooks/useProducts.jsx";
+import useHeroes from "./hooks/useHeroes.jsx";
 import Upload from "./pages/Upload.jsx";
-
+import UploadHero from "./pages/UploadHero.jsx";
+import UpdateHero from "./components/UpdateHero.jsx";
 
 
 
@@ -56,6 +58,7 @@ function App() {
 		          }
 	    }, []);
 	const { products, error, isLoading } = useProducts({ user, token });
+	const { heroes, err, isLoad } = useHeroes({ user, token });
   return (
 	  <>
 	  <div className={styles.all}>
@@ -64,10 +67,12 @@ function App() {
 	  	  <div className={styles.main}>
 	  	  <Router>
 	  	  <Routes>
-	  	  	<Route index element={<Home shower={shower} remover={remover} user={user} token={token} formData={loginData} setFormData={setLoginData} loggedin={loggedin} setlogin={setlogin} setToken={setToken} setUser={setUser} products={products} error={error} isLoading={isLoading} search={search} setSearch={setSearch} selectedService={selectedService} selectedAbout={selectedAbout} setSelectedService={setSelectedService} setSelectedAbout={setSelectedAbout} />} />
+	  	  	<Route index element={<Home shower={shower} remover={remover} user={user} token={token} formData={loginData} setFormData={setLoginData} loggedin={loggedin} setlogin={setlogin} setToken={setToken} setUser={setUser} products={products} error={error} isLoading={isLoading} search={search} setSearch={setSearch} selectedService={selectedService} selectedAbout={selectedAbout} setSelectedService={setSelectedService} setSelectedAbout={setSelectedAbout} heroes={heroes} />} />
 	  	  	<Route path="/:id" element={<ProductDetail items={products} shower={shower} remover={remover} user={user} token={token} formData={loginData} setFormData={setLoginData} loggedin={loggedin} setlogin={setlogin} setToken={setToken} setUser={setUser} products={products} error={error} isLoading={isLoading} search={search} setSearch={setSearch} selectedService={selectedService} selectedAbout={selectedAbout} setSelectedService={setSelectedService} setSelectedAbout={setSelectedAbout}/>}  />
 	  	  	<Route path="/login" element={<Login shower={shower} remover={remover} user={user} token={token} formData={loginData} setFormData={setLoginData} loggedin={loggedin} setlogin={setlogin} setToken={setToken} setUser={setUser} products={products} error={error} isLoading={isLoading} search={search} setSearch={setSearch} selectedService={selectedService} selectedAbout={selectedAbout} setSelectedService={setSelectedService} setSelectedAbout={setSelectedAbout}/>} />
-	  	  	<Route path="/Upload" element={<Upload shower={shower} remover={remover} user={user} token={token} formData={loginData} setFormData={setLoginData} loggedin={loggedin} setlogin={setlogin} setToken={setToken} setUser={setUser} products={products} error={error} isLoading={isLoading} search={search} setSearch={setSearch} selectedService={selectedService} selectedAbout={selectedAbout} setSelectedService={setSelectedService} setSelectedAbout={setSelectedAbout}/>} />
+	  	  	<Route path="/upload" element={<Upload shower={shower} remover={remover} user={user} token={token} formData={loginData} setFormData={setLoginData} loggedin={loggedin} setlogin={setlogin} setToken={setToken} setUser={setUser} products={products} error={error} isLoading={isLoading} search={search} setSearch={setSearch} selectedService={selectedService} selectedAbout={selectedAbout} setSelectedService={setSelectedService} setSelectedAbout={setSelectedAbout}/>} />
+	  	  	<Route path="/upload-logo" element={<UploadHero shower={shower} remover={remover} user={user} token={token} formData={loginData} setFormData={setLoginData} loggedin={loggedin} setlogin={setlogin} setToken={setToken} setUser={setUser} products={products} error={error} isLoading={isLoading} search={search} setSearch={setSearch} selectedService={selectedService} selectedAbout={selectedAbout} setSelectedService={setSelectedService} setSelectedAbout={setSelectedAbout}/>} />
+	  	  	<Route path="/update-logo" element={<UpdateHero shower={shower} remover={remover} user={user} token={token} formData={loginData} setFormData={setLoginData} loggedin={loggedin} setlogin={setlogin} setToken={setToken} setUser={setUser} products={products} error={error} isLoading={isLoading} search={search} setSearch={setSearch} selectedService={selectedService} selectedAbout={selectedAbout} setSelectedService={setSelectedService} setSelectedAbout={setSelectedAbout}/>} />
 	  	  </Routes>
 	  	  </Router>
 	  	  </div>
