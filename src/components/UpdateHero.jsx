@@ -33,7 +33,7 @@ function UpdateHero( { user, token, setSuccess, setlogin, search, setSearch, set
 	  const [imagePreview, setImagePreview] = useState(null);
 	  const [category, setCategory] = useState('All');
 	const [uploadSuccess, setUploadSuccess] = useState(false)
-	const id = 4;
+	const id = 1;
 
 		function remover() {
 		    localStorage.removeItem('user');

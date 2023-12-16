@@ -19,7 +19,7 @@ export default function Products(props: ProductsProp) {
 		        <div >
 		                {
 			                heroes
-						.filter(hero => hero.id === 4)
+						.filter(hero => hero.id === 1)
 						.map((hero) => (
 			                    		<Hero key={hero.id} hero={hero}/>
 				                	))

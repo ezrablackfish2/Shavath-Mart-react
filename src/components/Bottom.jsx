@@ -18,18 +18,18 @@ export default function Bottom( { user, token } ) {
 		{ user && token ? (
 			  	<>
 				<div className={styles.adminlinks}>
-		  		<button className={style.upload}>
 		  		<a className={style.whitelink} href="/upload">
+		  		<button className={style.upload}>
 		  		Upload A Product
-		  		</a>
 		  		</button>
+		  		</a>
 				</div>
 				<div className={styles.adminlinks}>
-			  	<button className={style.upload}>
 		  		<a className={style.whitelink} href="/update-logo">
+			  	<button className={style.upload}>
 		  		Update Logo
-		  		</a>
 		  		</button>
+		  		</a>
 				</div>
 			  	</>
 		  )

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const apiUrl = 'http://localhost:3000/api/upload';
+const apiUrl = 'https://api.shavathmart.com/api/upload';
 
 export const uploadData = async (formData: FormData, token: string) => {
 	  try {

@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export default axios.create({
-		baseURL: "http://localhost:3000/api/hero"
+		baseURL: "https://api.shavathmart.com/api/hero"
 });

@@ -22,7 +22,8 @@ a {
 	border: solid;
 	border-width: 0.00001px;
 	border-radius: 15px 15px 15px 15px;
-	font-family: 'Chakra Petch';	
+	font-family: 'Chakra Petch';
+	color: #aaaaaa;
 }
 
 .upload:hover {
