@@ -77,19 +77,8 @@ export default function Header({ user, token, setlogin, setSuccess, search, setS
 		            </a>
 		          </div>
 		          <div className={styles.headermedia}>
-		  { user && token ? (
-		  		<button className={styles.upload}>
-		  		<a className={styles.whitelink} href="/upload">
-		  		Upload
-		  		</a>
-		  		</button>
-		  )
-			  :
-			  (
-			  null
-			  )
-		  }
-		            {social_handles.map(({ icon, link }) => (
+
+		  {social_handles.map(({ icon, link }) => (
 				                <div className={styles.headeritems} key={link}>
 				                  <a className={styles.headerlink} href={link}>
 				                    <img

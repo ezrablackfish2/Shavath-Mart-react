@@ -75,7 +75,7 @@ function Home (  { shower, remover, user, token, setlogin, setSuccess, products,
 					        <Products data={products} search={search} selectedService={selectedService} />
 						}
 		      </div>
-		      <Bottom />
+		      <Bottom user={user} token={token}/>
 		      <Footer />
 		    </>
 	);

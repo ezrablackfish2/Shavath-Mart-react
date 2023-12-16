@@ -1,3 +1,10 @@
+.adminlinks{
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	margin-left: 20%;
+}
+
 .bottomtitle {
 	position: relative;
 	display: inline-block;
@@ -66,9 +73,21 @@
 	.bottombutton {
 		width: 70px;
 	}
+	.adminlinks{
+	width: 20%;
+	margin-left: 20%;
+}
+
+	
 }
 @media (max-width: 280px) {
 	.bottomtitle {
 		font-size: 150%;
 	}
+	.adminlinks{
+		display: block;
+	width: 20%;
+	margin-left: 20%;
+}
+
 }

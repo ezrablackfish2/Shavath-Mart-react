@@ -20,7 +20,7 @@ const UploadHeroPage: FC<UploadPageProps> = ({ user, token }) => {
 
 	  return (
 		      <div className={styles.uploadbody}>
-		        <h1 className={styles.uploadtitle}>Upload Cover Page</h1>
+		        <h1 className={styles.uploadtitle}>Upload Logo</h1>
 		        <UploadHeroForm user={user} token={token} onUpload={handleUpload} />
 		      </div>
 		    );

@@ -78,7 +78,7 @@ function UpdateHero( user, token) {
       {user && token ? (
 			              <>
 			      	<div className={styl.uploadbody}>
-			            <h1 className={styl.uploadtitle}>Update Data</h1>
+			            <h1 className={styl.uploadtitle}>Update Logo</h1>
 			      	<form className={styl.uploadform} onSubmit={handleUpdate}>
 			            <label className={styl.labeltitle}>Product Name</label>
 			            <input
