@@ -1,25 +1,25 @@
 .herotitle {
-		margin: 0;
-			padding: 0;
-				left: 0;
-					box-sizing: border-box;
-						display: flex;
-							justify-content: center;
-								align-items: center;
-									height: 700px;
-										background: #252839;
-											background: url('../public/shoes.jpg');
-												background-size: cover;
-													font-family: 'itim';
-														position: relative;
-															font-size: 14vw;
-																color: transparent;
-																	-webkit-text-stroke: 0.3vw #01f387;
-																		top: 150px;
-																			margin-bottom: 200px;
-																		}
-																		.herotitle::before
-																		{
+	margin: 0;
+	padding: 0;
+	left: 0;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 700px;
+	background: #252839;
+	background: url('../public/shoes.jpg');
+	background-size: cover;
+	font-family: 'itim';
+	position: relative;
+	font-size: 14vw;
+	color: transparent;
+	-webkit-text-stroke: 0.3vw #01f387;
+	top: 150px;
+	margin-bottom: 200px;
+	}
+	.herotitle::before
+	{
 																				content: attr(data-text);
 																					position: absolute;
 																						top: 220px;

@@ -1,9 +1,10 @@
 import styles from "./Bottom.module.css";
 import style from "./Header.module.css";
+import React, { useState } from 'react';
 
 
 
-export default function Bottom( user, token ) {
+export default function Bottom( { user, token } ) {
 		return (
 			<>
 				<div className={styles.bottomwhole}>

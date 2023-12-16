@@ -162,8 +162,9 @@ function ProductDetail (  { items, user, setlogin, setSuccess, search, setSearch
 
 									                                 })
 					   .then(res =>  {
-						   				console.log("successfully update", res.data);
-						   			})
+						   	console.log("successfully update", res.data);
+						   	window.location.reload();
+						   					   			})
 		                        .catch(err =>{
 										console.log(err.message)
 									});

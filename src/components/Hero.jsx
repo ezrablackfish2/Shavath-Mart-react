@@ -22,7 +22,11 @@ export default function Hero(props: HeroProps) {
 		imageURI = white; 
 	}
   const heroStyle = {
-    backgroundImage: `url(${imageURI})`,
+	backgroundImage: `url(${imageURI})`,
+	backgroundSize: 'cover',
+	backgroundPosition: 'center',
+	width: '100%',
+	position: 'relative',
   };
 
 

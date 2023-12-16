@@ -20,7 +20,7 @@ const UploadPage: FC<UploadPageProps> = ({ user, token }) => {
 
 	  return (
 		      <div className={styles.uploadbody}>
-		        <h1 className={styles.uploadtitle}>Upload Data</h1>
+		        <h1 className={styles.uploadtitle}>Upload A Product</h1>
 		        <UploadForm user={user} token={token} onUpload={handleUpload} />
 		      </div>
 		    );

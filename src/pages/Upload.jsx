@@ -17,7 +17,7 @@ interface UploadProps {
 }
 
 const Upload: React.FC<UploadProps> = ({ user, token, setSuccess, setlogin, search, setSearch, setSelectedAbout, setSelectedService, selectedAbout, selectedService }) => {
-	document.title = "Upload Product"
+	document.title = "Upload A Product"
 	  return (
 		      <>
 		        <link
