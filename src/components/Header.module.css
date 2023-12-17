@@ -269,12 +269,9 @@ a {
 		border-radius: 75%;
 	}
 	.searchbar {
-		left: -50px;
+		left: -40px;
 		margin-left: -100px;
 		padding-left: 0px;
-		width: 140%;
-	}
-	.seacrhbar2 {
 		width: 140%;
 	}
 }
@@ -340,12 +337,17 @@ a {
 	.searchbar {
 		position: relative;
 		display: inline-block;
-		left: 30%;
+		left: 20%;
+		margin-left: -100px;
 	}
 }
+
 @media(max-width: 232px) {
 	.searchimage {
 		right: -50%;
 		top: -160px;
+	}
+	.searchbar {
+		margin-left: 0px;
 	}
 }
