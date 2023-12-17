@@ -13,7 +13,7 @@ a {
 	display: inline-block;
 	background-color: #108a00;
 	background-color: #ffffff;
-	background-color: #2C2E7B;;
+	background-color: #2C2E7B;
 	width: 75px;
 	height: 68px;
 	margin-bottom: 20px;
@@ -183,7 +183,7 @@ a {
 	font-size: 100%;
 }
 .searchbar2 {
-	width: 80%;
+	width: 120%;
 	border: solid;
 	border-width: 0.00001px;
 	border-radius: 10px 10px 10px 10px;
@@ -200,6 +200,12 @@ a {
 	top: 6px;
 	position: relative;
 	display: none;
+}
+
+@media (max-width: 1200px) {
+	.searchbar2 {
+		display: none;
+	}
 }
 
 @media (max-width: 1024px) {
@@ -268,6 +274,12 @@ a {
 		width: 50px;
 		border-radius: 75%;
 	}
+	.searchbar {
+		left: -40px;
+		margin-left: -100px;
+		padding-left: 0px;
+		width: 140%;
+	}
 }
 
 @media(max-width: 448px) {
@@ -331,12 +343,17 @@ a {
 	.searchbar {
 		position: relative;
 		display: inline-block;
-		left: 0%;
+		left: 20%;
+		margin-left: -100px;
 	}
 }
+
 @media(max-width: 232px) {
 	.searchimage {
 		right: -50%;
 		top: -160px;
+	}
+	.searchbar {
+		margin-left: 0px;
 	}
 }

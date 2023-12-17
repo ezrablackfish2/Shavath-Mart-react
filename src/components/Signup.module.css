@@ -1,14 +1,16 @@
 .loggedlink {
 	position: relative;
 	margin: 15px;
+	margin-bottom: 20px;
 	top: 15px;
 	text-decoration: none;
 	color: #108a00;
+	display: block;
+	padding: 10px;
 }
 .loggedlink:hover {
 	background-color: #108a00;
 	color: #ffffff;
-	padding: 10px;
 	border-radius: 15px 15px 15px 15px;
 }
 

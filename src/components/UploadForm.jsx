@@ -20,7 +20,12 @@ const UploadForm: React.FC<UploadFormProps> = ({ onUpload, user, token }) => {
 	  const [description, setDescription] = useState('');
 	  const [availability, setAvailability] = useState(false);
 	  const [imagePreview, setImagePreview] = useState(null);
-	  const [uploadSuccess, setUploadSuccess] = useState(false)
+	  const [uploadSuccess, setUploadSuccess] = useState(false);
+
+
+	if (!user || !token) {
+		navigate("/login");
+	}
 
 	  const handleImageChange = (e) => {
 		      const file = e.target.files?.[0];
@@ -66,6 +71,7 @@ const UploadForm: React.FC<UploadFormProps> = ({ onUpload, user, token }) => {
 		    localStorage.removeItem('token');
 		    setUploadSuccess(false);
 		  }
+
 	if (uploadSuccess == false) {
 		  return (
 			      <form className={styles.uploadform} onSubmit={handleSubmit}>

@@ -1,3 +1,24 @@
+.logoutbutton {
+	position: relative;
+        display: block;
+        width: 150px;
+        padding: 10px;
+        left: 40%;
+	border: solid;
+	border-width: 0.000001px;
+        border-radius: 15px 15px 15px 15px;
+	font-family: 'Chakra Petch';
+	margin-bottom: 30px;
+	background-color: #2C2E7B;
+	color: #aaaaaa;
+}
+
+.logoutbutton:hover {
+        background-color: #14a800;
+        color: #ffffff;
+	font-family: 'Chakra Petch';
+}
+
 .adminlinks{
 	position: relative;
 	display: inline-block;
@@ -77,6 +98,9 @@
 	width: 20%;
 	margin-left: 20%;
 }
+	.logoutbutton {
+		left: 25%;
+	}
 
 	
 }
@@ -89,5 +113,12 @@
 	width: 20%;
 	margin-left: 20%;
 }
+	.logoutbutton {
+		left: 20%;
+		width: 75px;
+	}
+	.bottombutton {
+		left: -13%;
+	}
 
 }
