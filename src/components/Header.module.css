@@ -183,7 +183,7 @@ a {
 	font-size: 100%;
 }
 .searchbar2 {
-	width: 80%;
+	width: 120%;
 	border: solid;
 	border-width: 0.00001px;
 	border-radius: 10px 10px 10px 10px;
@@ -200,6 +200,12 @@ a {
 	top: 6px;
 	position: relative;
 	display: none;
+}
+
+@media (max-width: 1200px) {
+	.searchbar2 {
+		display: none;
+	}
 }
 
 @media (max-width: 1024px) {
