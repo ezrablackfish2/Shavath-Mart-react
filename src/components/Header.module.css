@@ -329,6 +329,14 @@ a {
 		top: -100px;
 	}
 }
+
+@media(max-width: 360px) {
+	.searchbar {
+		margin-left: -80px;
+	}
+}
+
+
 @media(max-width: 270px) {
 	.headergmailimage {
 		display: none;
