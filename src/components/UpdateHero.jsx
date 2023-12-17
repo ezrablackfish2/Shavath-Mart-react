@@ -8,6 +8,10 @@ import apiClient from "../api/api-client-hero-axios.jsx";
 import Header from '../components/Header.jsx';
 import st from '../components/Signup.module.css';
 import s from "../components/Update.module.css";
+import { useNavigate } from 'react-router-dom';
+
+
+
 
 interface UploadProps {
 	  user: any; 
@@ -34,6 +38,7 @@ function UpdateHero( { user, token, setSuccess, setlogin, search, setSearch, set
 	  const [category, setCategory] = useState('All');
 	const [uploadSuccess, setUploadSuccess] = useState(false)
 	const id = 1;
+	const navigate = useNavigate(); 
 
 		function remover() {
 		    localStorage.removeItem('user');
@@ -128,7 +133,7 @@ function UpdateHero( { user, token, setSuccess, setlogin, search, setSearch, set
 			          </form>
 			      	</div>
 			              </>
-			            ) : null}
+			            ) : navigate("/login")}
 		</>
 	);
 	}

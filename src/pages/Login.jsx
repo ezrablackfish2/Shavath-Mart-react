@@ -113,7 +113,8 @@ function Login({ user, token, formData, setFormData, loggedin, setlogin, respons
 				          <p>
 				            <button onClick={remover} className={styles.loginbutton}>Log Out</button>
 					    <a className={styles.loggedlink} href="/"> Go to Home Page </a>
-					    <a className={styles.loggedlink} href="/upload"> Go to Upload Page </a>
+					    <a className={styles.loggedlink} href="/upload">Upload A Product </a>
+					    <a className={styles.loggedlink} href="/update-logo"> Update The Logo </a>
 				          </p>
 				        </div>
 				      ) : (
