@@ -24,7 +24,7 @@ export default function Hero(props: HeroProps) {
   const heroStyle = {
 	backgroundImage: `url(${imageURI})`,
 	backgroundSize: '100% ',
-	backgroundPosition: 'center',
+	backgroundPosition: 'top',
 	backgroundRepeat: 'no-repeat',
 	width: '100%',
 	position: 'relative',
