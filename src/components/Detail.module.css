@@ -31,6 +31,7 @@
 
 .detailreviewtitle {
 	font-family: 'Black Ops One', cursive;
+	font-family: 'Chakra Petch', sans-serif;
 	font-size: 200%;
 }
 
@@ -75,6 +76,7 @@
 }
 
 .detailadd {
+	top: -200px;
 	position: relative;
 	display: inline-block;
 	margin-top : 5%;
@@ -92,9 +94,11 @@
 	background-color: #FFA818;
 	transition-property: background-color;
 	transition-duration: 0.4s;
+	cursor: pointer;
 }
 
 .detailinfo {
+	top: -200px;
 	position: relative;
 	display: inline-block;
 	width: 50%;
@@ -105,6 +109,7 @@
 	display: inline-block;
 	width: 100%;
 	font-family: 'Chakra Petch', sans-serif;
+	font-family: 'Roboto Mono', sans-serif;
 	text-align: center;
 	font-size: 300%;
 	color: #222222;
@@ -120,9 +125,10 @@
 	position: relative;
 	display: inline-block;
 	width: 50%;
-	top: 0px;
+	top: -100px;
 	left: 0%;
 	max-height: 640px;
+	margin-bottom: 200px;
 }
 .detailprice {
 	position: relative;
@@ -133,6 +139,7 @@
 	width: 50%;
 	color: #ff8888;
 	color: #4444ff;
+	margin-bottom: 200px;
 }
 .detailcolor {
 	position: relative;

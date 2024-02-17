@@ -6,7 +6,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: top;
-	height: 700px;
+	height: 1500px;
 	background: #252839;
 	background: url('../public/shoes.jpg');
 	background-size: cover;
@@ -15,8 +15,8 @@
 	font-size: 14vw;
 	color: transparent;
 	-webkit-text-stroke: 0.3vw #2C2E7B;
-	top: 30px;
-	margin-bottom: 200px;
+	top: -150px;
+	margin-bottom: 0px;
 	}
 	.herotitle::before
 	{
@@ -155,6 +155,9 @@
 																																																																																																																								}
 
 																																																																																																																								@media (max-width: 1048px) {
+																																																																																																																									.herotitle {
+				top: -110px;
+																																																																																																																									}
 																																																																																																																										.herotitle::before
 																																																																																																																											{
 																																																																																																																													        content: attr(data-text);

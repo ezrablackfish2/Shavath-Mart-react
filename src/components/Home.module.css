@@ -30,13 +30,16 @@
 	margin: 10%;
 	width: 80%;
 	font-family: 'Chakra Petch'; 
-	font-family: 'Rajdhani'; 
+	font-family: 'Rajdhani';
+	margin-top: -350px;
+	top: -60px;
 }
 
 .loadhome {
-	position: absolute;
+	position: relative;
 	display: inline-block;
 	width: 20%;
 	left: 40%;
 	margin: 0%;
+	margin-bottom: 1000px;
 }

@@ -28,6 +28,7 @@
 
 .reviewbutton:hover {
 	background-color: #FFa818;
+	cursor: pointer;
 }
 .detailreviewtitle {
 	font-size: 200%;

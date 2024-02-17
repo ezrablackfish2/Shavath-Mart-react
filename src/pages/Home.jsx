@@ -39,11 +39,8 @@ function Home (  { shower, remover, user, token, setlogin, setSuccess, products,
 		      <Header user={user} token={token} setlogin={setlogin} setSuccess={setSuccess} search={search} setSearch={setSearch} selectedService={selectedService} selectedAbout={selectedAbout} setSelectedService={setSelectedService} setSelectedAbout={setSelectedAbout}/>
 		{ console.log("home heroes", heroes) }
 		      <HeroMap heroes={heroes} />
-		      <div className={styles.homesearch}>
-		        <SearchProduct search={search} setSearch={setSearch}/>
-		      </div>
 		      <div className="flex justify-center mb-28">
-			{error && <p className={styles.rederror}> Shavath site request error code 404 page not found </p>}
+			{error && <p className={styles.rederror}> Conncection With Shavath Mart Database Lost </p>}
 			{isLoading && <img src={load} className={styles.loadhome} />}
 			{ selectedAbout === "Shavath Mart" ?
 						<div className={styles.about}>
@@ -53,6 +50,9 @@ function Home (  { shower, remover, user, token, setlogin, setSuccess, products,
 					<p> 6363    You will find here Shoes, Bags, Cosmetics, Jewellery & other accessories.</p>
 
 					<p> 6363    6363 We have free delivery service in Addis Ababa but we charged out of Addis Ababa.</p>
+					<p> 🚚We have free delivery service</p>
+					<p>✍️Contact-<a href="https://t.me/hiwimehdi">@hiwimehdi</a></p>
+					
 						</div>
 					</div>
 						: selectedAbout === "Location" ?
@@ -61,6 +61,8 @@ function Home (  { shower, remover, user, token, setlogin, setSuccess, products,
 						<div className={styles.aboutcontent}></div>
 					<p>  6363  አድራሻ :-ሲ.ኤም.ሲ ጎልጎታ ህንፃ /ጊብሰን ት/ቤት ፊትለፊት/ምድርቤት  </p>
 					<p>  6363  Address:-CMC Golgotha Tower Infront of Gibson school Basemen	 </p>
+					<p>አድራሻ :-መገናኛ 3M ሲቲ ሞል 1ኛ ፎቅ ዲስፕሌይ </p>
+					<p>Address:-Megenagna 3M City Mall 1st floor display</p>
 						</div>
 						: selectedAbout === "Contact Us"?
 						

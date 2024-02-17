@@ -11,6 +11,7 @@
 	margin-bottom: 30px;
 	background-color: #2C2E7B;
 	color: #aaaaaa;
+	display: none;
 }
 
 .logoutbutton:hover {
@@ -24,6 +25,7 @@
 	display: inline-block;
 	width: 30%;
 	margin-left: 20%;
+	display: none;
 }
 
 .bottomtitle {
@@ -45,6 +47,8 @@
 
 .bottomcontent {
 	font-family: 'Itim', cursive;
+	font-family: 'Roboto Mono';
+	font-weight: 999;
 	margin: 5%;
 }
 
@@ -56,7 +60,6 @@
 	text-align: center;
 	border-radius: 5px 5px 5px 5px;
 	padding: 8px;
-	margin-right: 50%;
 	margin-left: 40%;
 	width: 20%;
 	font-family: 'Croissant One', serif;
@@ -72,10 +75,12 @@
 .bottomwhole {
 	position: relative;
 	display: inline-block;
-	width: 80%;
-	left: 10%;
+	width: 100%;
+	left: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
 	background-color: #cccccc;
-	margin-top: 250px;
+	margin-top: 150px;
 }
 
 @media (max-width: 1024px) {
@@ -101,6 +106,9 @@
 	.logoutbutton {
 		left: 25%;
 	}
+	.bottombutton {
+		display: none;
+	}
 
 	
 }
@@ -109,7 +117,7 @@
 		font-size: 150%;
 	}
 	.adminlinks{
-		display: block;
+		display: none;
 	width: 20%;
 	margin-left: 20%;
 }

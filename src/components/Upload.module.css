@@ -7,6 +7,10 @@
 	font-family: 'Chakra Petch';
 }
 
+.checkbox:hover {
+	cursor: pointer;
+}
+
 .previewImage {
 	position: relative;
 	display: inline-block;
@@ -31,6 +35,7 @@
 .uploaddeletebutton:hover {
 	background-color: #ff0000;
 	color: #ffffff;
+	cursor: pointer;
 }
 
 .uploadupdatebutton {
@@ -51,6 +56,7 @@
 .uploadupdatebutton:hover {
 	background-color: #14a800;
 	color: #ffffff;
+	cursor: pointer;
 
 }
 
@@ -72,6 +78,7 @@
 .uploadbutton:hover {
 	background-color: #14a800;
 	color: #ffffff;
+	cursor: pointer;
 }
 
 .titleinput {
@@ -83,6 +90,9 @@
 	margin-bottom: 5%;
 	padding-left: 10px;
 	font-family: 'Chakra Petch';
+	padding: 5px;
+	border-radius: 15px;
+	padding-left: 10px;
 }
 .titleinput:hover {
 }
@@ -108,13 +118,15 @@
 	border-width: 0.0001px;
 	padding: 25px;
 	color: #108a00;
-	margin-top: 15%;
+	margin-top: -100px;
 }
 
 .uploadtitle {
 	position: relative;
-	display: inline-block;
+	display: flex;
 	width: 100%;
+	justify-content: center;
+	align-items: center;
 	font-family: 'Chakra Petch';
 	font-family: 'Black Ops One';
 	font-size: 300%;

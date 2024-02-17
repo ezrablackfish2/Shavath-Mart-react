@@ -15,5 +15,5 @@
 .updatebutton:hover {
 	background-color: #14a800;
 	color: #ffffff;
-
+	cursor: pointer;
 }

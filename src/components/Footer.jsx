@@ -2,7 +2,7 @@ import Text from "./Text.jsx";
 import styles from './Footer.module.css';
 import React, { useState } from 'react';
 import social_handles from '../utils/social_handles.jsx';
-import logo from '../public/logo.jpg';
+import logo from '../public/logo.png';
 
 export default function Footer() {
 

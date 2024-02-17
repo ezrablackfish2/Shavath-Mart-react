@@ -30,7 +30,7 @@ export default function Product(props: ProductProps) {
 		    	<a href={`/${props.product.id}`} className={styles.productlink}>
 		                <img className={styles.productimage} src={imageURI}/>
 		    <p className={styles.productname}>
-		      Name: {props.product.name.length > 17
+		       {props.product.name.length > 17
 			          ? `${props.product.name.slice(0, 17)}...`
 			          : props.product.name}
 		    </p>

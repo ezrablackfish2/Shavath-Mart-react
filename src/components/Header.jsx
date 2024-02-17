@@ -9,10 +9,12 @@ import React, { useState, useEffect } from 'react';
 import social_handles from '../utils/social_handles.jsx'
 import gmail from '../public/gmail.png'
 import phone from '../public/phone.png'
-import logo from '../public/logo.jpg';
+import logo from '../public/logo.png';
 import styl from "./Upload.module.css";
-
-
+import user from '../public/user.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
+import flag from "../public/flag.png";
 
 
 interface HeaderProps {
@@ -51,19 +53,35 @@ export default function Header({ user, token, setlogin, setSuccess, search, setS
 	  function remover() {
 		      localStorage.removeItem("user");
 		      localStorage.removeItem("token");
+		      window.location.reload()
 		    }
 
 	  return (
 		      <>
+		  	<div className={styles.promotion}>Get discount for many products</div>
 		        <div className={styles.header}>
-		          <div className={styles.headerdiv}>
+		  	<div className={styles.linkLogo}>
+		  	  <a href="/">
+		            <img className={styles.logo} src={logo} alt="Logo Image"/>
+		          </a>
+		  	</div>
+		  	    <div className={!isSticky ? styles.dropdowns : styles.dropdownsfixed}>
+		          <ServiceSelector
+		            selectedService={selectedService}
+		            setSelectedService={setSelectedService}
+		          />
+		          <AboutSelector
+		            selectedAbout={selectedAbout}
+		            setSelectedAbout={setSelectedAbout}
+		          />
+		        </div>
+		  	<div className={styles.headerdiv}>
 		            <button onClick={() => setSelectedAbout("Contact Us")} className={styles.headerphone}>
 		              <img
 		                className={styles.headerphoneimage}
 		                src={phone}
 		                alt="Phone Image"
 		              />
-		              +251912243671
 		            </button>
 		          </div>
 		          <div className={styles.headerdiv}>
@@ -73,9 +91,26 @@ export default function Header({ user, token, setlogin, setSuccess, search, setS
 		                src={gmail}
 		                alt="Gmail Image"
 		              />
-		              shavath@gmail
 		            </a>
 		          </div>
+		  	<a href="/update-logo">
+		  	<img src={flag} className={styles.flag} />
+		  	</a>
+		  { user && token ?
+		  	<div style={{ display: "inline", zIndex: 4}} onClick={remover}>
+		  	<FontAwesomeIcon className={styles.logoutButton} icon={faRightFromBracket} />
+		  	</div>
+			  :
+			  null
+		  }
+		  	<div className={styles.navigationbar}> 
+		          <Search search={search} setSearch={setSearch} />
+		  	<a href="/upload">
+			  <FontAwesomeIcon className={styles.loginButton} icon={faUser} />
+		  	</a>
+		        </div>
+		  	
+		          
 		          <div className={styles.headermedia}>
 
 		  {social_handles.map(({ icon, link }) => (
@@ -91,22 +126,8 @@ export default function Header({ user, token, setlogin, setSuccess, search, setS
 				              ))}
 		          </div>
 		        </div>
-		        <div className={styles.navigationbar}>
-		          <a href="/">
-		            <img className={styles.logo} src={logo} alt="Logo Image"/>
-		          </a>
-		          <Search search={search} setSearch={setSearch} />
-		        </div>
-		        <div className={!isSticky ? styles.dropdowns : styles.dropdownsfixed}>
-		          <ServiceSelector
-		            selectedService={selectedService}
-		            setSelectedService={setSelectedService}
-		          />
-		          <AboutSelector
-		            selectedAbout={selectedAbout}
-		            setSelectedAbout={setSelectedAbout}
-		          />
-		        </div>
+		        
+		        
 		      </>
 		    );
 }

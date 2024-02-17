@@ -1,3 +1,86 @@
+.logoutButton {
+	top: -160px;
+	left: 86%;
+	display: inline-block;
+	position: relative;
+	width: 20px;	
+	z-index: 4;
+}
+.logoutButton:hover {
+	cursor: pointer;
+}
+
+.dropSearch {
+	display: block;
+	position: absolute;
+	width: 90%;
+	left: 5%;
+	top: 90px;
+	border: solid;
+	border-width: 0.00001px;
+	border-radius: 10px 10px 10px 10px;
+	margin-right: 5px;
+	padding: 5px 5px 5px 5px;
+	font-family: 'Bellota', cursive;
+	font-size: 12px;
+	background-color: #f5f5f5;
+	color: #000000;
+	font-weight: 999;
+	border: none;
+	outline: none;
+}
+
+.searchIconSmall {
+	display: none;
+}
+
+
+
+.flag {
+	top: -155px;
+	left: 84%;
+	display: inline-block;
+	position: relative;
+	width: 20px;
+}
+
+.flag:hover {
+	cursor: pointer;
+}
+
+
+.loginButton {
+	display: inline-block;
+	position: relative;
+	top: -169px;
+	left: 85%;
+	color: #575757;
+}
+
+.searchIcon {
+	display: inline-block;
+	position: relative;
+	top: -168px;
+	left: 120%;
+}
+
+.searchIcon:hover {
+	cursor: pointer;
+}
+
+.promotion {
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: 30px;
+	background-color: #2c2e7b;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Comic Neue';
+	color: #ffffff;
+	z-index: -1000;
+}
+
 a {
 	text-decoration: none;
 }
@@ -70,15 +153,21 @@ a {
 
 .dropdowns {
 	position: relative;
-	display: inline-block;
-	width: 60%;
-	left: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	left: 10%;
+	top: -80px;
 }
 .dropdownsfixed {
 	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	top: 0;
-	left: 40%;
-	width: 60%;
+	left: 0%;
+	width: 100%;
 	color: #000000;
 	z-index: 999;
 	font-weight: 999;
@@ -87,8 +176,8 @@ a {
 	position: relative;
 	display: inline-block;
 	width: 100%;
-	color: #ffffff;
-	background-color: #2C2E7B;
+	color: #000000;
+	background-color: #ffffff;
 	height: 35px;
 }
 .headermedia {
@@ -120,23 +209,32 @@ a {
 	font-size: 80%;
 	font-family: 'Bellota', cursive;
 	margin-right: 2%;
-	background-color: #2E2C7B;
-	color: #ffffff;
+	color: #000000;
+	background-color: #ffffff;
 	border: none;
 }
+
+.headerphone:hover {
+	cursor: pointer;
+}
+
 .headerdiv {
-	display: inline;
+	display: inline-block;
+	position: relative;
+	top: -155px;
+	left: 80%;
+
 }
 
 .headergmail {
-	left: 20%;
+	left: 100%;
 	position: relative;
 	display: inline-block;
 	font-family: 'Bellota', cursive;
 	font-size: 90%;
 	width: 55%;
-	background-color: #2e2c7b;
-	color: #ffffff;
+	color: #000000;
+	background-color: #ffffff;
 	border: none;
 	text-decoration: none;
 }
@@ -162,25 +260,34 @@ a {
 	display: inline-block;
 	position: relative;
 	width: 100px;
-	left: 10%;
-	margin-right: 17%;
+	left: 1%;
+	top: -5px;
 }
 .Search {
 	display: inline-block;
 	position: relative;
 	right: 0%;
 	font-family: 'Bellota', cursive;
-	width: 60%;
+	left: 80%;
+	width: 10%;
 }
 .searchbar {
-	width: 80%;
+	display: inline-block;
+	position: relative;
+	width: 170px;
 	border: solid;
 	border-width: 0.00001px;
 	border-radius: 10px 10px 10px 10px;
 	margin-right: 5px;
-	padding: 15px 15px 15px 15px;
+	padding: 5px 5px 5px 5px;
 	font-family: 'Bellota', cursive;
-	font-size: 100%;
+	font-size: 12px;
+	background-color: #f5f5f5;
+	color: #000000;
+	font-weight: 999;
+	border: none;
+	outline: none;
+	top: -145px;
 }
 .searchbar2 {
 	width: 120%;
@@ -195,11 +302,10 @@ a {
 }
 
 .searchimage {
-	position: inline-block;
+	display: inline-block;
 	width: 25%;
 	top: 6px;
 	position: relative;
-	display: none;
 }
 
 @media (max-width: 1200px) {
@@ -215,6 +321,57 @@ a {
 	.dropdownsfixed {
 		display: none;
 	}
+	.linkLogo {
+		display: flex;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+		z-index: 1;
+		margin-bottom: 85px;
+		width: 100%;
+	}
+	.searchbar {
+		display: none;
+	}
+	.searchIcon {
+		display: none;
+	}
+	.searchIconSmall {
+		display: inline-block;
+		position: relative;
+		display: inline-block;
+		top: -168px;
+		left: 120%;
+		z-index: 4;
+	}
+	.searchIconSmall:hover {
+		cursor: pointer;
+	}
+	.flag {
+		left: 83%;
+		top: -175px;
+	}
+	.headerphone {
+		top: -20px;
+		z-index: 2;
+	}
+	.headergmail {
+		top: -20px;
+		left: 60%;
+		z-index: 2;
+	}
+	.loginButton {
+		left: 86%;
+		z-index: 2;
+	}
+	.searchIcon {
+		left: 100%;
+		z-index: 2;
+	}
+	.logoutButton {
+		top: -179px;
+		left: 85%;
+	}
 }
 
 @media (max-width: 856px) {
@@ -227,48 +384,62 @@ a {
 	}
 	.searchbar {
 		display: inline-block;
+		display: none;
 		margin-top: 15px;
 		padding-top: 5px;
 		padding-bottom: 5px;
 		margin-right: 0px;
 		padding-right: 0px;
 	}
+	
 	.searchimage {
 		position: absolute;
 		top: -70px;
 		width: 30px;
 		right: 0%;
 	}
+	.logoutButton {
+		left: 85%;
+	}
+}
+
+@media(max-width: 740px) {
+	.logoutButton {
+		top: -179px;
+		left: 83%;
+	}
 }
 
 @media(max-width: 599px) {
-	.header {
+	.header1 {
 		height: 80px;
 		width: 80%;
 		border-radius: 10px 10px 10px 10px;
 		margin-right: 0px;
 	}
 	.headerphone {
+		display: none;
 		left: 40%;
 	}
-	.searchimage {
+	.searchimage1 {
 		width: 70px;
 		top: -90px;
 		right: -14%;
 		margin-left: 0px;
 	}
 	.headergmail {
-		left: 30%;
+		left: 20%;
 		display: block;
+		display: none;
 	}
-	.headermedia {
+	.headermedia1 {
 		left: 25%;
 		display: block;
 	}
 	.headerimages {
 		margin-right: 25px;
 	}
-	.logo {
+	.logo1 {
 		left: 2%;
 		top: -70px;
 		width: 50px;
@@ -280,9 +451,47 @@ a {
 		padding-left: 0px;
 		width: 140%;
 	}
+	.flag {
+		left: 87%;
+	}
+	.logoutButton {
+		top: -179px;
+		left: 91%;
+	}
+	.searchIconSmall {
+		left: 79%;
+	}
 }
 
-@media(max-width: 448px) {
+@media (max-width: 560px) {
+	.logoutButton1 {
+		left: 77%;
+	}
+}
+
+@media (max-width: 500px) {
+	.headerphone {
+		left: -40%;
+	}
+	.headergmail {
+		left: -40%;
+	}
+	.flag {
+		left: 77%;
+	}
+	.logoutButton {
+		left: 85%;
+	}
+	.searchIconSmall {
+		left: -20%;
+		z-index: 4;
+	}
+	.loginButton {
+		left: 80%;
+	}
+}
+
+@media(max--width: 448px) {
 	.searchimage {
 		top: -120px;
 		right: 0%;
@@ -329,6 +538,28 @@ a {
 		top: -100px;
 	}
 }
+
+
+@media(max-width: 380px) {
+	.logoutButton1 {
+		left: 52%;
+	}
+	.flag1 {
+		left: 68%;
+	}
+}
+
+@media(max-width: 300px) {
+	.logoutButton {
+		left: 80%;
+	}
+	.loginButton {
+
+	}
+}
+
+
+
 @media(max-width: 270px) {
 	.headergmailimage {
 		display: none;

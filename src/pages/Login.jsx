@@ -3,7 +3,7 @@ import axios, { AxiosResponse, AxiosError } from 'axios';
 import styles from '../components/Signup.module.css';
 import Header from '../components/Header.jsx';
 import { useNavigate } from 'react-router-dom';
-import logo from '../public/logo.jpg'
+import logo from '../public/logo.png'
 
 
 
