@@ -1,3 +1,9 @@
+.quick {
+	position: relative;
+	display: inline-block;
+	left: -50px;
+}
+
 .footerlinking {
 	margin-left: 10px;
 	display: none;
@@ -25,6 +31,8 @@
 	font-family: "Quicksand", sans-serif;
        font-size: 200%;
        text-align: left;
+       position: relative;
+       left: 30px;
 }
 .tablebody {
 	font-family: 'Black Ops One';
