@@ -20,7 +20,7 @@ type ProductsProp = {
 
 export default function Products(props: ProductsProp) {
 		const [currentPage, setCurrentPage] = useState(1);
-		const productsPerPage = 8;
+		const productsPerPage = 12;
 		const filteredProducts = props.data
 	  	   .filter((product) => {
 				    return props.search.toLowerCase() === ""

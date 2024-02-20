@@ -212,6 +212,7 @@ a {
 	color: #000000;
 	background-color: #ffffff;
 	border: none;
+	opacity: 0;
 }
 
 .headerphone:hover {
@@ -237,6 +238,7 @@ a {
 	background-color: #ffffff;
 	border: none;
 	text-decoration: none;
+	opacity: 0;
 }
 .headerphoneimage {
 	display: inline-block;
@@ -407,6 +409,9 @@ a {
 	.logoutButton {
 		top: -179px;
 		left: 83%;
+	}
+	.flag {
+		left: 80%;
 	}
 }
 
