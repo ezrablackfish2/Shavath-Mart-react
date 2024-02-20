@@ -24,10 +24,12 @@
 	font-family: 'Barrio';
 	font-family: "Quicksand", sans-serif;
        font-size: 200%;
+       text-align: left;
 }
 .tablebody {
 	font-family: 'Black Ops One';
 	font-family: 'Comic Neue';
+	text-align: left;
 }
 
 .table {
